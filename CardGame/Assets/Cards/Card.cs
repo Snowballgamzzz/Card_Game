@@ -7,7 +7,7 @@ public class Card
     public string cardType;
     public string cardElement;
     public Sprite cardImage;
-    public string followerCount;
+    public float followerCount;
     public string cardAbility;
     public string elementalAbility;
 }
