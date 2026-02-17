@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6cc0f83da9b0948be11c6e78309fb8, type: 3}
   m_Name: New Card Database
   m_EditorClassIdentifier: Assembly-CSharp::CardDatabase
-  cards: []
+  cards:
+  - cardName: 
+    cardType: 
+    cardElement: 
+    cardImage: {fileID: 0}
+    followerCount: 20
+    cardAbility: 
+    elementalAbility: 

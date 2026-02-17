@@ -12,4 +12,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15395100045a9c4e90f6b122a003f7d, type: 3}
   m_Name: New God Card Database
   m_EditorClassIdentifier: Assembly-CSharp::GodCardDatabase
-  godCards: []
+  godCards:
+  - godName: Zeus
+    primaryAffinity: Sky
+    secondaryAffinity: Fire
+    godCardImage: {fileID: 0}
+    godAbility: Each Sky card played gains you 5f
+  - godName: Apollo
+    primaryAffinity: Sky
+    secondaryAffinity: Nature
+    godCardImage: {fileID: 0}
+    godAbility: Each Festival played gains you 5f
+  - godName: Hera
+    primaryAffinity: Sky
+    secondaryAffinity: Ocean
+    godCardImage: {fileID: 0}
+    godAbility: Each Monster played gains you 5f
+  - godName: Hephaestus
+    primaryAffinity: Fire
+    secondaryAffinity: Sky
+    godCardImage: {fileID: 0}
+    godAbility: Each Fire card played gains you 5F
+  - godName: Ares
+    primaryAffinity: Fire
+    secondaryAffinity: Nature
+    godCardImage: {fileID: 0}
+    godAbility: 'If a player played a Hero, you can draw a card, then discard a card,
+      if that card matches either of your elemental affinity: you gain 5F'
+  - godName: Athena
+    primaryAffinity: Fire
+    secondaryAffinity: Ocean
+    godCardImage: {fileID: 0}
+    godAbility: 'Each Hero played gains you 5F '
+  - godName: Poseidon
+    primaryAffinity: Ocean
+    secondaryAffinity: Nature
+    godCardImage: {fileID: 0}
+    godAbility: Each Ocean card played gains you 5F
+  - godName: Hermes
+    primaryAffinity: Ocean
+    secondaryAffinity: Sky
+    godCardImage: {fileID: 0}
+    godAbility: If a player played a Wildcard you gain 15F
+  - godName: Aphrodite
+    primaryAffinity: Ocean
+    secondaryAffinity: Fire
+    godCardImage: {fileID: 0}
+    godAbility: 'If a player played a Festival, you can draw a card, then discard
+      a card, if that card matches either of your elemental affinity: you gain 5F'
+  - godName: Demeter
+    primaryAffinity: Nature
+    secondaryAffinity: Sky
+    godCardImage: {fileID: 0}
+    godAbility: Each Nature card played gains you 5F
+  - godName: Artimis
+    primaryAffinity: Nature
+    secondaryAffinity: Fire
+    godCardImage: {fileID: 0}
+    godAbility: 'If a player played a Monster, you can draw a card, then discard
+      a card, if that card matches either of your elemental affinity: you gain 5F'
+  - godName: Dionysus
+    primaryAffinity: Nature
+    secondaryAffinity: Ocean
+    godCardImage: {fileID: 0}
+    godAbility: 'If you kill opponents F you gain the amount of F you killed '
