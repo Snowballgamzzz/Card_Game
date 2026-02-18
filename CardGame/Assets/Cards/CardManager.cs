@@ -9,7 +9,9 @@ public class CardManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI cardNameText;
     [SerializeField] private TextMeshProUGUI cardTypeText;
     [SerializeField] private TextMeshProUGUI cardElementText;
-    [SerializeField] private float cardFollowerCount;
+    [SerializeField] private float primaryCardFollowerCount;
+    [SerializeField] private float secondaryCardFollowerCount;
+    [SerializeField] private float nullCardFollowerCount;
     [SerializeField] private TextMeshProUGUI cardAbilityText;
     [SerializeField] private TextMeshProUGUI cardElementAbility;
 
@@ -29,7 +31,9 @@ public class CardManager : MonoBehaviour
         cardNameText.text = card.cardName;
         cardTypeText.text = card.cardType;
         cardElementText.text = card.cardElement;
-        cardFollowerCount = card.followerCount;
+        primaryCardFollowerCount = card.primaryFollowerCount;
+        secondaryCardFollowerCount = card.secondaryFollowerCount;
+        nullCardFollowerCount = card.nullFollowerCount;
     }
 
     private void Save()
