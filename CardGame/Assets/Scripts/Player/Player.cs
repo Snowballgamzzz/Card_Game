@@ -5,6 +5,11 @@ public class Player : MonoBehaviour
     public float followerCount;
     public string playerName;
 
+    public bool isBeingTargetted;
+    public bool playingHeroCard;
+    public bool playingMonsterCard;
+    public bool playingFestivalCard;
+
     GameManager manager;
 
     void Start()
