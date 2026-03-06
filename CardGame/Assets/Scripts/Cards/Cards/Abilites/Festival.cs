@@ -14,6 +14,8 @@ public class Festival : MonoBehaviour
 
     GodElement godElement;
     Player player;
+    Fire fire;
+    Ocean ocean;
 
     public float primaryFollowerCount;
     public float secondaryFollowerCount;
@@ -23,6 +25,8 @@ public class Festival : MonoBehaviour
     {
         godElement = GetComponentInParent<GodElement>();
         player = GetComponentInParent<Player>();
+        fire = GetComponent<Fire>();
+        ocean = GetComponent<Ocean>();
     }
 
     private void Update()
@@ -35,10 +39,12 @@ public class Festival : MonoBehaviour
         if (godElement.primaryElement == GodElement.PrimaryElement.Ocean && element == FestivalElement.Ocean)
         {
             player.followerCount += primaryFollowerCount;
+            ocean.OceanGain();
         }
         else if (godElement.primaryElement == GodElement.PrimaryElement.Fire && element == FestivalElement.Fire)
         {
             player.followerCount += primaryFollowerCount;
+            fire.FireDamage();
         }
         else if (godElement.primaryElement == GodElement.PrimaryElement.Earth && element == FestivalElement.Earth)
         {
@@ -59,10 +65,12 @@ public class Festival : MonoBehaviour
         if (godElement.secondaryElement == GodElement.SecondaryElement.Ocean && element == FestivalElement.Ocean)
         {
             player.followerCount += secondaryFollowerCount;
+            ocean.OceanGain();
         }
         else if (godElement.secondaryElement == GodElement.SecondaryElement.Fire && element == FestivalElement.Fire)
         {
             player.followerCount += secondaryFollowerCount;
+            fire.FireDamage();
         }
         else if (godElement.secondaryElement == GodElement.SecondaryElement.Earth && element == FestivalElement.Earth)
         {
@@ -75,6 +83,15 @@ public class Festival : MonoBehaviour
         else
         {
             player.followerCount += nullFollowerCount;
+
+            if (element == FestivalElement.Fire)
+            {
+                fire.FireDamage();
+            }
+            else if (element == FestivalElement.Ocean)
+            {
+                ocean.OceanGain();
+            }
         }
     }
 }
