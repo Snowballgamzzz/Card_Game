@@ -15,6 +15,7 @@ public class Monster : MonoBehaviour
     GodElement godElement;
     Target target;
     Fire fire;
+    Ocean ocean;
 
     public float primaryFollowerCount;
     public float secondaryFollowerCount;
@@ -24,7 +25,8 @@ public class Monster : MonoBehaviour
     { 
         godElement = GetComponentInParent<GodElement>();
         target = GetComponentInParent<Target>();
-        fire = GetComponentInChildren<Fire>();
+        fire = GetComponent<Fire>();
+        ocean = GetComponent<Ocean>();
     }
 
     public void PrimaryFollowerCheck()
@@ -32,7 +34,7 @@ public class Monster : MonoBehaviour
         if (godElement.primaryElement == GodElement.PrimaryElement.Ocean && element == MonsterElement.Ocean && !target.targettedPlayer.playingHeroCard)
         {
             target.targettedPlayer.followerCount -= primaryFollowerCount;
-            fire.FireDamage();
+            ocean.OceanGain();
         }
         else if (godElement.primaryElement == GodElement.PrimaryElement.Fire && element == MonsterElement.Fire && !target.targettedPlayer.playingHeroCard)
         {
@@ -42,12 +44,10 @@ public class Monster : MonoBehaviour
         else if (godElement.primaryElement == GodElement.PrimaryElement.Earth && element == MonsterElement.Earth && !target.targettedPlayer.playingHeroCard)
         {   
             target.targettedPlayer.followerCount -= primaryFollowerCount;
-            fire.FireDamage();
         }
         else if (godElement.primaryElement == GodElement.PrimaryElement.Sky && element == MonsterElement.Sky && !target.targettedPlayer.playingHeroCard)
         {
             target.targettedPlayer.followerCount -= primaryFollowerCount;
-            fire.FireDamage();
         }
         else
         {
@@ -60,11 +60,12 @@ public class Monster : MonoBehaviour
         if (godElement.secondaryElement == GodElement.SecondaryElement.Ocean && element == MonsterElement.Ocean && !target.targettedPlayer.playingHeroCard)
         {
             target.targettedPlayer.followerCount -= secondaryFollowerCount;
-            fire.FireDamage();
+            ocean.OceanGain();
         }
         else if (godElement.secondaryElement == GodElement.SecondaryElement.Fire && element == MonsterElement.Fire && !target.targettedPlayer.playingHeroCard)
         {
             target.targettedPlayer.followerCount -= secondaryFollowerCount;
+            fire.FireDamage();
         }
         else if (godElement.secondaryElement == GodElement.SecondaryElement.Earth && element == MonsterElement.Earth && !target.targettedPlayer.playingHeroCard)
         {
@@ -77,6 +78,15 @@ public class Monster : MonoBehaviour
         else if (!target.targettedPlayer.playingHeroCard)
         {
             target.targettedPlayer.followerCount -= nullFollowerCount;
+
+            if (element == MonsterElement.Fire)
+            {
+                fire.FireDamage();
+            }
+            else if (element == MonsterElement.Ocean)
+            {
+                ocean.OceanGain();
+            }
         }
     }
 }

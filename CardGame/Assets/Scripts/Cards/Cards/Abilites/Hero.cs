@@ -15,6 +15,7 @@ public class Hero : MonoBehaviour
     GodElement godElement;
     Player player;
     Fire fire;
+    Ocean ocean;
 
     public float primaryFollowerCount;
     public float secondaryFollowerCount;
@@ -24,7 +25,8 @@ public class Hero : MonoBehaviour
     {
         player = GetComponentInParent<Player>();
         godElement = GetComponentInParent<GodElement>();
-        fire = GetComponentInChildren<Fire>();
+        fire = GetComponent<Fire>();
+        ocean = GetComponent<Ocean>();
     }
 
     public void PrimaryFollowerCheck()
@@ -32,6 +34,7 @@ public class Hero : MonoBehaviour
         if (godElement.primaryElement == GodElement.PrimaryElement.Ocean && element == HeroElement.Ocean)
         {
             player.followerCount += primaryFollowerCount;
+            ocean.OceanGain();
         }
         else if (godElement.primaryElement == GodElement.PrimaryElement.Fire && element == HeroElement.Fire)
         {
@@ -57,6 +60,7 @@ public class Hero : MonoBehaviour
         if (godElement.secondaryElement == GodElement.SecondaryElement.Ocean && element == HeroElement.Ocean)
         {
             player.followerCount += secondaryFollowerCount;
+            ocean.OceanGain();
         }
         else if (godElement.secondaryElement == GodElement.SecondaryElement.Fire && element == HeroElement.Fire)
         {
@@ -78,6 +82,10 @@ public class Hero : MonoBehaviour
             if (element == HeroElement.Fire)
             {
                 fire.FireDamage(); 
+            }
+            else if (element == HeroElement.Ocean)
+            {
+                ocean.OceanGain();
             }
         }
     }
