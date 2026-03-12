@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1496984107217561920
+--- !u!1001 &2309708089978719895
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,19 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1721568526431564624, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
       propertyPath: m_Name
-      value: festival card Variant
+      value: festival card sky base
       objectReference: {fileID: 0}
     - target: {fileID: 4952076822541744792, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -34
       objectReference: {fileID: 0}
     - target: {fileID: 4952076822541744792, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.767
+      value: -0.45093012
       objectReference: {fileID: 0}
     - target: {fileID: 4952076822541744792, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 9.22
       objectReference: {fileID: 0}
     - target: {fileID: 4952076822541744792, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30,15 +30,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4952076822541744792, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4952076822541744792, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4952076822541744792, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4952076822541744792, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -55,5 +55,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1721568526431564624, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7359628888986289638}
+    - targetCorrespondingSourceObject: {fileID: 1721568526431564624, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1809313399287830333}
   m_SourcePrefab: {fileID: 100100000, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
+--- !u!1 &4028898887282802119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1721568526431564624, guid: c236f2d90dd8151479fb11d7b87b91b2, type: 3}
+  m_PrefabInstance: {fileID: 2309708089978719895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7359628888986289638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4028898887282802119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1dcb45b9c800844592c4fd1efddd33d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Festival
+  element: 1
+  primaryFollowerCount: 20
+  secondaryFollowerCount: 10
+  nullFollowerCount: 5
+--- !u!114 &1809313399287830333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4028898887282802119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cbcaddfe8943414b9e2e08330b5cd1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sky
