@@ -9,6 +9,12 @@ public class Player : MonoBehaviour
     public bool playingHeroCard;
     public bool playingMonsterCard;
     public bool playingFestivalCard;
+    public bool isPlayerTurn;
+
+    public GameObject cardSlotOne;
+    public GameObject cardSlotTwo;
+    public GameObject cardSlotThree;
+    public GameObject cardSlotFour;
 
     GameManager manager;
 
