@@ -592,10 +592,12 @@ MonoBehaviour:
   - {fileID: 565389091}
   - {fileID: 800524550}
   - {fileID: 1974222040}
-  player: {fileID: 5198568694924382510, guid: 5b16935975477e04d9c5404749ee2f88, type: 3}
+  playerPrefab: {fileID: 5198568694924382510, guid: 5b16935975477e04d9c5404749ee2f88, type: 3}
   usedSpawnPoints: []
+  playerTurnOrder: []
   spawnTime: 0
   spawnTimeLeft: 0
+  delayStart: 1
 --- !u!4 &1196643743
 Transform:
   m_ObjectHideFlags: 0

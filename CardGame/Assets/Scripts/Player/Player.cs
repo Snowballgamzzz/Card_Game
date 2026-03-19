@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
         manager = FindAnyObjectByType<GameManager>();
 
         playerName = ("Player " + manager.spawned);
+
+        isPlayerTurn = false;
     }
 
     public void PlayCardPhase()

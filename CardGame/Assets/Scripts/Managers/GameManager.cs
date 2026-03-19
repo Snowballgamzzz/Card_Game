@@ -1,6 +1,6 @@
-using JetBrains.Annotations;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     public float spawnTime;
     public float spawnTimeLeft = 0f;
+
+    public float delayStart;
 
     public void Start()
     {
@@ -42,7 +44,7 @@ public class GameManager : MonoBehaviour
             spawned++;
             points++;
 
-            NextPlayerTurn();
+            StartCoroutine(DelayAfterSpawn());
         }
         else
         {
@@ -50,39 +52,51 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void NextPlayerTurn()
+    IEnumerator DelayAfterSpawn()
     {
-        for (int i = 0; i <= playerTurnOrder.Count; i++)
-        {
-            if (i == 0)
-            {
-                //Player 1 turn
-                Debug.Log("Player 1 turn");
-                i++;
-            }
-            else if (i == 1)
-            {
-                //Player 2 turn
-                Debug.Log("Player 2 turn");
-                i++;
-            }
-            else if (i == 2)
-            {
-                //Player 3 turn
-                Debug.Log("Player 3 turn");
-                i++;
-            }
-            else if (i == 3)
-            {
-                //Player 4 turn
-                Debug.Log("Player 4 turn");
-                i++;
-            }
-            else if (i == 4)
-            {
-                Debug.Log("Back to player 1 turn");
-                i = 0;
-            }
-        }
+        yield return new WaitForSeconds(delayStart);
+        PlayerOneTurn();
+    }
+
+    public void PlayerOneTurn()
+    {
+        GameObject player1 = playerTurnOrder[0];
+
+        Player playerOne = player1.GetComponent<Player>();
+        playerOne.isPlayerTurn = true;
+        Debug.Log(playerOne.playerName + " turn");
+
+        PlayerTwoTurn();
+    }
+
+    public void PlayerTwoTurn()
+    {
+        GameObject player2 = playerTurnOrder[1];
+
+        Player playerTwo = player2.GetComponent<Player>();
+        playerTwo.isPlayerTurn = true;
+        Debug.Log(playerTwo.playerName + " turn");
+
+        PlayerThreeTurn();
+    }
+
+    public void PlayerThreeTurn()
+    {
+        GameObject player3 = playerTurnOrder[2];
+
+        Player playerThree = player3.GetComponent<Player>();
+        playerThree.isPlayerTurn = true;
+        Debug.Log(playerThree.playerName + " turn");
+
+        PlayerFourTurn();
+    }
+
+    public void PlayerFourTurn()
+    {
+        GameObject player4 = playerTurnOrder[3];
+
+        Player playerFour = player4.GetComponent<Player>();
+        playerFour.isPlayerTurn = true;
+        Debug.Log(playerFour.playerName + " turn");
     }
 }
