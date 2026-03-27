@@ -20,6 +20,11 @@ public class GameManager : MonoBehaviour
 
     public float delayStart;
 
+    public bool isPlayerOneTurn;
+    public bool isPlayerTwoTurn;
+    public bool isPlayerThreeTurn;
+    public bool isPlayerFourTurn;
+
     public void Start()
     {
         usedSpawnPoints = new List<Transform>();
@@ -44,7 +49,7 @@ public class GameManager : MonoBehaviour
             spawned++;
             points++;
 
-            StartCoroutine(DelayAfterSpawn());
+            isPlayerOneTurn = true;
         }
         else
         {
@@ -61,42 +66,44 @@ public class GameManager : MonoBehaviour
     public void PlayerOneTurn()
     {
         GameObject player1 = playerTurnOrder[0];
-
         Player playerOne = player1.GetComponent<Player>();
-        playerOne.isPlayerTurn = true;
-        Debug.Log(playerOne.playerName + " turn");
 
-        PlayerTwoTurn();
+        playerOne.isPlayerTurn = true;
+        isPlayerOneTurn = true;
+
+        playerOne.DrawPhase();
     }
 
     public void PlayerTwoTurn()
     {
         GameObject player2 = playerTurnOrder[1];
-
         Player playerTwo = player2.GetComponent<Player>();
-        playerTwo.isPlayerTurn = true;
-        Debug.Log(playerTwo.playerName + " turn");
 
-        PlayerThreeTurn();
+        playerTwo.isPlayerTurn = true;
+        isPlayerTwoTurn = true;
+
+        playerTwo.DrawPhase();
     }
 
     public void PlayerThreeTurn()
     {
         GameObject player3 = playerTurnOrder[2];
-
         Player playerThree = player3.GetComponent<Player>();
-        playerThree.isPlayerTurn = true;
-        Debug.Log(playerThree.playerName + " turn");
 
-        PlayerFourTurn();
+        playerThree.isPlayerTurn = true;
+        isPlayerThreeTurn = true;
+
+        playerThree.DrawPhase();
     }
 
     public void PlayerFourTurn()
     {
         GameObject player4 = playerTurnOrder[3];
-
         Player playerFour = player4.GetComponent<Player>();
+
         playerFour.isPlayerTurn = true;
-        Debug.Log(playerFour.playerName + " turn");
+        isPlayerFourTurn = true;
+
+        playerFour.DrawPhase();
     }
 }
