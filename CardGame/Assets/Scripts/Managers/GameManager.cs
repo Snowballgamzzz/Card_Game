@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class GameManager : MonoBehaviour
     public bool isPlayerTwoTurn;
     public bool isPlayerThreeTurn;
     public bool isPlayerFourTurn;
+
+    public TMP_Text turnText;
 
     public void Start()
     {
@@ -50,6 +53,11 @@ public class GameManager : MonoBehaviour
             points++;
 
             isPlayerOneTurn = true;
+
+            if (playerTurnOrder.Count == 4)
+            {
+                PlayerOneTurn();
+            }
         }
         else
         {
@@ -70,8 +78,7 @@ public class GameManager : MonoBehaviour
 
         playerOne.isPlayerTurn = true;
         isPlayerOneTurn = true;
-
-        playerOne.DrawPhase();
+        isPlayerFourTurn = false;
     }
 
     public void PlayerTwoTurn()
@@ -81,8 +88,7 @@ public class GameManager : MonoBehaviour
 
         playerTwo.isPlayerTurn = true;
         isPlayerTwoTurn = true;
-
-        playerTwo.DrawPhase();
+        isPlayerOneTurn = false;
     }
 
     public void PlayerThreeTurn()
@@ -92,8 +98,7 @@ public class GameManager : MonoBehaviour
 
         playerThree.isPlayerTurn = true;
         isPlayerThreeTurn = true;
-
-        playerThree.DrawPhase();
+        isPlayerTwoTurn = false;
     }
 
     public void PlayerFourTurn()
@@ -103,7 +108,6 @@ public class GameManager : MonoBehaviour
 
         playerFour.isPlayerTurn = true;
         isPlayerFourTurn = true;
-
-        playerFour.DrawPhase();
+        isPlayerThreeTurn = false;
     }
 }

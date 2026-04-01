@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public bool playingMonsterCard;
     public bool playingFestivalCard;
     public bool isPlayerTurn;
+    public bool playerEndsTurn;
 
     [Header("Transforms")]
     private int slotIndex;
@@ -37,10 +38,17 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P) && isPlayerTurn)
         {
+            isPlayerTurn = false;
+            playerEndsTurn = true;
             EndPhase();
+        }
+        
+
+        if (isPlayerTurn)
+        {
+            manager.turnText.text = playerName + " Turn";
         }
     }
 
@@ -73,28 +81,25 @@ public class Player : MonoBehaviour
     public void EndPhase()
     {
 
-        if (manager.isPlayerOneTurn && isPlayerTurn)
-        {
-            isPlayerTurn = false;
-            manager.isPlayerTwoTurn = true;
-            manager.isPlayerOneTurn = false;
-        }
-        else if (manager.isPlayerTwoTurn && isPlayerTurn)
-        {
-            isPlayerTurn = false;
-            manager.isPlayerTwoTurn = false;
-            manager.isPlayerThreeTurn = true;
-        }
-        else if (manager.isPlayerThreeTurn && isPlayerTurn)
-        {
-            isPlayerTurn = false;
-            manager.isPlayerThreeTurn = false;
-            manager.isPlayerFourTurn = true;
-        }
-        else if (manager.isPlayerFourTurn && isPlayerTurn)
-        {
-            isPlayerTurn = false;
-            manager.isPlayerFourTurn = false;
-        }
+            if (manager.isPlayerOneTurn && playerEndsTurn)
+            {
+                playerEndsTurn = false;
+                manager.PlayerTwoTurn();
+            }
+            else if (manager.isPlayerTwoTurn && playerEndsTurn)
+            {
+                playerEndsTurn = false;
+                manager.PlayerThreeTurn();
+            }
+            else if (manager.isPlayerThreeTurn && playerEndsTurn)
+            {
+                playerEndsTurn = false;
+                manager.PlayerFourTurn();
+            }
+            else if (manager.isPlayerFourTurn && !playerEndsTurn)
+            {
+
+            }
+        
     }
 }

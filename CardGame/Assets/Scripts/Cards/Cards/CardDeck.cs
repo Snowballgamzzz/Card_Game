@@ -20,19 +20,31 @@ public class CardDeck : MonoBehaviour
         {
             if (manager.isPlayerOneTurn)
             {
-                manager.PlayerOneTurn();
+                GameObject player1 = manager.playerTurnOrder[0];
+                Player playerOne = player1.GetComponent<Player>();
+
+                playerOne.DrawPhase();
             }
             else if (manager.isPlayerTwoTurn)
             {
-                manager.PlayerTwoTurn();
+                GameObject player2 = manager.playerTurnOrder[1];
+                Player playerTwo = player2.GetComponent<Player>();
+
+                playerTwo.DrawPhase();
             }
             else if (manager.isPlayerThreeTurn)
             {
-                manager.PlayerThreeTurn();
+                GameObject player3 = manager.playerTurnOrder[2];
+                Player playerThree = player3.GetComponent<Player>();
+
+                playerThree.DrawPhase();
             }
             else if (manager.isPlayerFourTurn)
             {
-                manager.PlayerFourTurn();
+                GameObject player4 = manager.playerTurnOrder[3];
+                Player playerFour = player4.GetComponent<Player>();
+
+                playerFour.DrawPhase();
             }
         }
     }
