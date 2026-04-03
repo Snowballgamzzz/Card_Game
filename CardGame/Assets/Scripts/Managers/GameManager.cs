@@ -25,8 +25,19 @@ public class GameManager : MonoBehaviour
     public bool isPlayerTwoTurn;
     public bool isPlayerThreeTurn;
     public bool isPlayerFourTurn;
+    public bool playerIsEndingTheirTurn;
 
     public TMP_Text turnText;
+
+    private GameObject player1;
+    private GameObject player2;
+    private GameObject player3;
+    private GameObject player4;
+
+    private Player playerOne;
+    private Player playerTwo;
+    private Player playerThree;
+    private Player playerFour;
 
     public void Start()
     {
@@ -73,41 +84,71 @@ public class GameManager : MonoBehaviour
 
     public void PlayerOneTurn()
     {
-        GameObject player1 = playerTurnOrder[0];
-        Player playerOne = player1.GetComponent<Player>();
+        player1 = playerTurnOrder[0];
+        playerOne = player1.GetComponent<Player>();
 
         playerOne.isPlayerTurn = true;
         isPlayerOneTurn = true;
-        isPlayerFourTurn = false;
     }
 
     public void PlayerTwoTurn()
     {
-        GameObject player2 = playerTurnOrder[1];
-        Player playerTwo = player2.GetComponent<Player>();
+        player2 = playerTurnOrder[1];
+        playerTwo = player2.GetComponent<Player>();
 
         playerTwo.isPlayerTurn = true;
         isPlayerTwoTurn = true;
-        isPlayerOneTurn = false;
     }
 
     public void PlayerThreeTurn()
     {
-        GameObject player3 = playerTurnOrder[2];
-        Player playerThree = player3.GetComponent<Player>();
+        player3 = playerTurnOrder[2];
+        playerThree = player3.GetComponent<Player>();
 
         playerThree.isPlayerTurn = true;
         isPlayerThreeTurn = true;
-        isPlayerTwoTurn = false;
     }
 
     public void PlayerFourTurn()
     {
-        GameObject player4 = playerTurnOrder[3];
-        Player playerFour = player4.GetComponent<Player>();
+        player4 = playerTurnOrder[3];
+        playerFour = player4.GetComponent<Player>();
 
         playerFour.isPlayerTurn = true;
         isPlayerFourTurn = true;
-        isPlayerThreeTurn = false;
+    }
+
+    public void EndTurn()
+    {
+        playerIsEndingTheirTurn = true;
+
+        if (isPlayerOneTurn && playerIsEndingTheirTurn)
+        {
+            playerIsEndingTheirTurn = false;
+            isPlayerOneTurn = false;
+            playerOne.isPlayerTurn = false;
+            PlayerTwoTurn();
+        }
+        else if (isPlayerTwoTurn && playerIsEndingTheirTurn)
+        {
+            playerIsEndingTheirTurn = false;
+            isPlayerTwoTurn = false;
+            playerTwo.isPlayerTurn = false;
+            PlayerThreeTurn();
+        }
+        else if (isPlayerThreeTurn && playerIsEndingTheirTurn)
+        {
+            playerIsEndingTheirTurn = false;
+            isPlayerThreeTurn = false;
+            playerThree.isPlayerTurn = false;
+            PlayerFourTurn();
+        }
+        else if (isPlayerFourTurn && playerIsEndingTheirTurn)
+        {
+            playerIsEndingTheirTurn = false;
+            isPlayerFourTurn = false;
+            playerFour.isPlayerTurn = false;
+            PlayerOneTurn();
+        }
     }
 }
