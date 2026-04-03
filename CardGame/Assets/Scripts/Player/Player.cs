@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 public class Player : MonoBehaviour
@@ -40,9 +39,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P) && isPlayerTurn)
         {
-            isPlayerTurn = false;
-            playerEndsTurn = true;
-            EndPhase();
+            EndPhasePlayerOne();
         }
         
 
@@ -78,28 +75,50 @@ public class Player : MonoBehaviour
 
     }
 
-    public void EndPhase()
+    public void EndPhasePlayerOne()
+    {
+        if (manager.isPlayerOneTurn)
+        {
+            isPlayerTurn = false;
+            manager.isPlayerOneTurn = false;
+            manager.PlayerTwoTurn();
+        }
+        else if (!manager.isPlayerOneTurn)
+        {
+            EndPhasePlayerTwo();
+        }
+    }
+
+    public void EndPhasePlayerTwo()
+    {
+        if (manager.isPlayerTwoTurn)
+        {
+            isPlayerTurn = false;
+            manager.isPlayerTwoTurn = false;
+            manager.PlayerThreeTurn();
+        }
+        else
+        {
+            EndPhasePlayerThree();
+        }
+    }
+
+    public void EndPhasePlayerThree()
+    {
+        if (manager.isPlayerThreeTurn)
+        {
+            isPlayerTurn = false;
+            manager.isPlayerThreeTurn = false;
+            manager.PlayerFourTurn();
+        }
+        else
+        {
+            EndPhasePlayerFour();
+        }
+    }
+
+    public void EndPhasePlayerFour()
     {
 
-            if (manager.isPlayerOneTurn && playerEndsTurn)
-            {
-                playerEndsTurn = false;
-                manager.PlayerTwoTurn();
-            }
-            else if (manager.isPlayerTwoTurn && playerEndsTurn)
-            {
-                playerEndsTurn = false;
-                manager.PlayerThreeTurn();
-            }
-            else if (manager.isPlayerThreeTurn && playerEndsTurn)
-            {
-                playerEndsTurn = false;
-                manager.PlayerFourTurn();
-            }
-            else if (manager.isPlayerFourTurn && !playerEndsTurn)
-            {
-
-            }
-        
     }
 }
