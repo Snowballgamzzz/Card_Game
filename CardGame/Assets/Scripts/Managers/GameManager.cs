@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     private GameObject player3;
     private GameObject player4;
 
+    public Transform playerCamera;
+
     private Player playerOne;
     private Player playerTwo;
     private Player playerThree;
@@ -89,6 +91,9 @@ public class GameManager : MonoBehaviour
 
         playerOne.isPlayerTurn = true;
         isPlayerOneTurn = true;
+
+        playerCamera.transform.position = player1.transform.position;
+        playerCamera.transform.rotation = player1.transform.rotation;
     }
 
     public void PlayerTwoTurn()
@@ -98,6 +103,9 @@ public class GameManager : MonoBehaviour
 
         playerTwo.isPlayerTurn = true;
         isPlayerTwoTurn = true;
+
+        playerCamera.transform.position = player2.transform.position;
+        playerCamera.transform.rotation = player2.transform.rotation;
     }
 
     public void PlayerThreeTurn()
@@ -107,6 +115,9 @@ public class GameManager : MonoBehaviour
 
         playerThree.isPlayerTurn = true;
         isPlayerThreeTurn = true;
+
+        playerCamera.transform.position = player3.transform.position;
+        playerCamera.transform.rotation = player3.transform.rotation;
     }
 
     public void PlayerFourTurn()
@@ -116,6 +127,9 @@ public class GameManager : MonoBehaviour
 
         playerFour.isPlayerTurn = true;
         isPlayerFourTurn = true;
+
+        playerCamera.transform.position = player4.transform.position;
+        playerCamera.transform.rotation = player4.transform.rotation;
     }
 
     public void EndTurn()
