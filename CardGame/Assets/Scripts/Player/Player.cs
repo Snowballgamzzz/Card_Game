@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     private int slotIndex;
     public Transform[] cardSlots;
     public List<Transform> occupiedCardSlot;
+    public Transform cardPlacement;
 
     [Header("Script References")]
     GameManager manager;
@@ -51,6 +52,16 @@ public class Player : MonoBehaviour
 
     public void PlayCardPhase()
     {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            if (hit.transform.gameObject.GetComponent<Placement>())
+            {
+                hit.transform.position = cardPlacement.transform.position;
+                hit.transform.rotation = cardPlacement.transform.rotation;
+            }
+        }
 
     }
 

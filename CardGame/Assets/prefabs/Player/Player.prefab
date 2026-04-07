@@ -160,6 +160,7 @@ Transform:
   - {fileID: 7874452601222390877}
   - {fileID: 3048230864539236613}
   - {fileID: 2620897629345978239}
+  - {fileID: 6813573950889882915}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-4006907008083288110
@@ -182,12 +183,14 @@ MonoBehaviour:
   playingMonsterCard: 0
   playingFestivalCard: 0
   isPlayerTurn: 0
+  playerEndsTurn: 0
   cardSlots:
   - {fileID: 7577022888979653406}
   - {fileID: 7874452601222390877}
   - {fileID: 3048230864539236613}
   - {fileID: 2620897629345978239}
   occupiedCardSlot: []
+  cardPlacement: {fileID: 6813573950889882915}
 --- !u!114 &1004338901897785261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,3 +364,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Target
   targettedPlayer: {fileID: 0}
   isMouseOverPlayer: 0
+--- !u!1 &8581606300002394116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6813573950889882915}
+  m_Layer: 0
+  m_Name: CardPlacement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6813573950889882915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8581606300002394116}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.27767, y: 0.35843, z: 5.53}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8177521562658399066}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
