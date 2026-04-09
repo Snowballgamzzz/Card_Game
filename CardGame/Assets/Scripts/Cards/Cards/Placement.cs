@@ -13,10 +13,10 @@ public class Placement : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            cardSelected = true;
+        cardSelected = true;
 
+        if (Input.GetKeyDown(KeyCode.Mouse0) && cardSelected)
+        {
             if (manager.isPlayerOneTurn)
             {
                 GameObject player1 = manager.playerTurnOrder[0];
