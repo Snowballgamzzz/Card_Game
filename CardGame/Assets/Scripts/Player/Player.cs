@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 100))
         {
-            if (hit.transform.gameObject.GetComponent<Placement>())
+            if (hit.transform.gameObject.GetComponent<Placement>() && hit.transform.gameObject.GetComponentInParent<Player>().isPlayerTurn)
             {
                 hit.transform.position = cardPlacement.transform.position;
                 hit.transform.rotation = cardPlacement.transform.rotation;
@@ -76,7 +76,9 @@ public class Player : MonoBehaviour
         {
             GameObject playerCard = Instantiate(deck.card, cardSlots[playerSlotIndex].position, cardSlots[playerSlotIndex].rotation);
             playerCard.transform.parent = this.gameObject.transform;
+            occupiedCardSlot.Add(cardSlots[playerSlotIndex]);
 
+            slotIndex++;
             drawAmount--;
         }
     }
