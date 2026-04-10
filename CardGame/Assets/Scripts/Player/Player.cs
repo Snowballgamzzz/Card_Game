@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class Player : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour
     public bool playingFestivalCard;
     public bool isPlayerTurn;
     public bool playerEndsTurn;
+    public bool playerTargeting;
 
     [Header("Transforms")]
     private int slotIndex;
@@ -24,6 +26,8 @@ public class Player : MonoBehaviour
     [Header("Script References")]
     GameManager manager;
     CardDeck deck;
+
+    public GameObject targetedPlayer;
 
     void Start()
     {
@@ -38,100 +42,72 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) && isPlayerTurn)
-        {
-            EndPhasePlayerOne();
-        }
-        
-
-        if (isPlayerTurn)
+        if (isPlayerTurn && !playerTargeting)
         {
             manager.turnText.text = playerName + " Turn";
+        }
+        else if (isPlayerTurn && playerTargeting)
+        {
+            manager.turnText.text = playerName + " Select your Target";
+        }
+
+        if (playerTargeting)
+        {
+            TargetPhase();
         }
     }
 
     public void PlayCardPhase()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 100))
+        if (!playerTargeting)
         {
-            if (hit.transform.gameObject.GetComponent<Placement>() && hit.transform.gameObject.GetComponentInParent<Player>().isPlayerTurn)
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, 100))
             {
-                hit.transform.position = cardPlacement.transform.position;
-                hit.transform.rotation = cardPlacement.transform.rotation;
+                if (hit.transform.gameObject.GetComponent<Placement>() && hit.transform.gameObject.GetComponentInParent<Player>().isPlayerTurn)
+                {
+                    hit.transform.position = cardPlacement.transform.position;
+                    hit.transform.rotation = cardPlacement.transform.rotation;
+                }
             }
         }
-
     }
 
     public void DrawPhase()
     {
-        deck.cardIndex = Random.Range(0, deck.deck.Length);
-        deck.card = deck.deck[deck.cardIndex];
-
-        int playerSlotIndex = slotIndex;
-
-        if (!occupiedCardSlot.Contains(cardSlots[playerSlotIndex]) && drawAmount >= 1)
+        if (!playerTargeting)
         {
-            GameObject playerCard = Instantiate(deck.card, cardSlots[playerSlotIndex].position, cardSlots[playerSlotIndex].rotation);
-            playerCard.transform.parent = this.gameObject.transform;
-            occupiedCardSlot.Add(cardSlots[playerSlotIndex]);
+            deck.cardIndex = Random.Range(0, deck.deck.Length);
+            deck.card = deck.deck[deck.cardIndex];
 
-            slotIndex++;
-            drawAmount--;
+            int playerSlotIndex = slotIndex;
+
+            if (!occupiedCardSlot.Contains(cardSlots[playerSlotIndex]) && drawAmount >= 1)
+            {
+                GameObject playerCard = Instantiate(deck.card, cardSlots[playerSlotIndex].position, cardSlots[playerSlotIndex].rotation);
+                playerCard.transform.parent = this.gameObject.transform;
+                occupiedCardSlot.Add(cardSlots[playerSlotIndex]);
+
+                slotIndex++;
+                drawAmount--;
+            }
         }
     }
 
     public void TargetPhase()
     {
-
-    }
-
-    public void EndPhasePlayerOne()
-    {
-        if (manager.isPlayerOneTurn)
+        if (playerTargeting)
         {
-            isPlayerTurn = false;
-            manager.isPlayerOneTurn = false;
-            manager.PlayerTwoTurn();
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, 100))
+            {
+                if (Input.GetKeyDown(KeyCode.Mouse0))
+                {
+                    targetedPlayer = hit.transform.parent.gameObject;
+                }
+            }
         }
-        else if (!manager.isPlayerOneTurn)
-        {
-            EndPhasePlayerTwo();
-        }
-    }
-
-    public void EndPhasePlayerTwo()
-    {
-        if (manager.isPlayerTwoTurn)
-        {
-            isPlayerTurn = false;
-            manager.isPlayerTwoTurn = false;
-            manager.PlayerThreeTurn();
-        }
-        else
-        {
-            EndPhasePlayerThree();
-        }
-    }
-
-    public void EndPhasePlayerThree()
-    {
-        if (manager.isPlayerThreeTurn)
-        {
-            isPlayerTurn = false;
-            manager.isPlayerThreeTurn = false;
-            manager.PlayerFourTurn();
-        }
-        else
-        {
-            EndPhasePlayerFour();
-        }
-    }
-
-    public void EndPhasePlayerFour()
-    {
-
     }
 }

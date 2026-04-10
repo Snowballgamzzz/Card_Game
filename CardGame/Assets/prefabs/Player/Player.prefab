@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 8177521562658399066}
   - component: {fileID: -4006907008083288110}
   - component: {fileID: 1004338901897785261}
+  - component: {fileID: 9152611092026759485}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -184,6 +185,7 @@ MonoBehaviour:
   playingFestivalCard: 0
   isPlayerTurn: 0
   playerEndsTurn: 0
+  playerTargeting: 0
   cardSlots:
   - {fileID: 7577022888979653406}
   - {fileID: 7874452601222390877}
@@ -191,6 +193,7 @@ MonoBehaviour:
   - {fileID: 2620897629345978239}
   occupiedCardSlot: []
   cardPlacement: {fileID: 6813573950889882915}
+  targetedPlayer: {fileID: 0}
 --- !u!114 &1004338901897785261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,6 +240,27 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!65 &9152611092026759485
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5198568694924382510}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7713624201527291222
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +290,7 @@ Transform:
   m_GameObject: {fileID: 7713624201527291222}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.35, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

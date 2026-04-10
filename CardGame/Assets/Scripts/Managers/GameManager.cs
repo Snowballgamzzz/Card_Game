@@ -25,7 +25,12 @@ public class GameManager : MonoBehaviour
     public bool isPlayerTwoTurn;
     public bool isPlayerThreeTurn;
     public bool isPlayerFourTurn;
+    public bool playerOneHasTarget;
+    public bool playerTwoHasTarget;
+    public bool playerThreeHasTarget;
+    public bool playerFourHasTarget;
     public bool playerIsEndingTheirTurn;
+    public bool allPlayersHaveTargets;
 
     public TMP_Text turnText;
 
@@ -44,6 +49,11 @@ public class GameManager : MonoBehaviour
     public void Start()
     {
         usedSpawnPoints = new List<Transform>();
+        playerOneHasTarget = true;
+        playerTwoHasTarget = true;
+        playerThreeHasTarget = true;
+        playerFourHasTarget = true;
+        allPlayersHaveTargets = true;
     }
 
     private void Update()
@@ -92,6 +102,11 @@ public class GameManager : MonoBehaviour
         playerOne.isPlayerTurn = true;
         isPlayerOneTurn = true;
 
+        if (!playerOneHasTarget)
+        {
+            playerOne.playerTargeting = true;
+        }
+
         playerCamera.transform.position = player1.transform.position;
         playerCamera.transform.rotation = player1.transform.rotation;
     }
@@ -103,6 +118,11 @@ public class GameManager : MonoBehaviour
 
         playerTwo.isPlayerTurn = true;
         isPlayerTwoTurn = true;
+
+        if (!playerTwoHasTarget)
+        {
+            playerTwo.playerTargeting = true;
+        }
 
         playerCamera.transform.position = player2.transform.position;
         playerCamera.transform.rotation = player2.transform.rotation;
@@ -116,6 +136,11 @@ public class GameManager : MonoBehaviour
         playerThree.isPlayerTurn = true;
         isPlayerThreeTurn = true;
 
+        if (!playerThreeHasTarget)
+        {
+            playerThree.playerTargeting = true;
+        }
+
         playerCamera.transform.position = player3.transform.position;
         playerCamera.transform.rotation = player3.transform.rotation;
     }
@@ -128,40 +153,98 @@ public class GameManager : MonoBehaviour
         playerFour.isPlayerTurn = true;
         isPlayerFourTurn = true;
 
+        if (!playerFourHasTarget)
+        {
+            playerFour.playerTargeting = true;
+        }
+
         playerCamera.transform.position = player4.transform.position;
         playerCamera.transform.rotation = player4.transform.rotation;
     }
 
     public void EndTurn()
     {
-        playerIsEndingTheirTurn = true;
+        player1 = playerTurnOrder[0];
+        playerOne = player1.GetComponent<Player>();
 
-        if (isPlayerOneTurn && playerIsEndingTheirTurn)
+        player2 = playerTurnOrder[1];
+        playerTwo = player2.GetComponent<Player>();
+
+        player3 = playerTurnOrder[2];
+        playerThree = player3.GetComponent<Player>();
+
+        player4 = playerTurnOrder[3];
+        playerFour = player4.GetComponent<Player>();
+
+        if (!playerOne.playerTargeting && !playerTwo.playerTargeting && !playerThree.playerTargeting && !playerFour.playerTargeting)
         {
-            playerIsEndingTheirTurn = false;
-            isPlayerOneTurn = false;
+            playerIsEndingTheirTurn = true;
+
+            if (isPlayerOneTurn && playerIsEndingTheirTurn)
+            {
+                playerIsEndingTheirTurn = false;
+                isPlayerOneTurn = false;
+                playerOne.isPlayerTurn = false;
+                playerOneHasTarget = false;
+                PlayerTwoTurn();
+            }
+            else if (isPlayerTwoTurn && playerIsEndingTheirTurn)
+            {
+                playerIsEndingTheirTurn = false;
+                isPlayerTwoTurn = false;
+                playerTwo.isPlayerTurn = false;
+                playerTwoHasTarget = false;
+                PlayerThreeTurn();
+            }
+            else if (isPlayerThreeTurn && playerIsEndingTheirTurn)
+            {
+                playerIsEndingTheirTurn = false;
+                isPlayerThreeTurn = false;
+                playerThree.isPlayerTurn = false;
+                playerThreeHasTarget = false;
+                PlayerFourTurn();
+            }
+            else if (isPlayerFourTurn && playerIsEndingTheirTurn)
+            {
+                playerIsEndingTheirTurn = false;
+                isPlayerFourTurn = false;
+                playerFour.isPlayerTurn = false;
+                playerFourHasTarget = false;
+                allPlayersHaveTargets = false;
+                Target();
+            }
+        }
+    }
+
+    public void Target()
+    {
+        if (!isPlayerOneTurn && !allPlayersHaveTargets)
+        {
+            PlayerOneTurn();
+        }
+        else if (isPlayerOneTurn && !allPlayersHaveTargets && !playerOneHasTarget)
+        {
+            playerOneHasTarget = true;
             playerOne.isPlayerTurn = false;
             PlayerTwoTurn();
         }
-        else if (isPlayerTwoTurn && playerIsEndingTheirTurn)
+        else if (isPlayerTwoTurn && !allPlayersHaveTargets && !playerTwoHasTarget)
         {
-            playerIsEndingTheirTurn = false;
-            isPlayerTwoTurn = false;
             playerTwo.isPlayerTurn = false;
+            playerTwoHasTarget = true;
             PlayerThreeTurn();
         }
-        else if (isPlayerThreeTurn && playerIsEndingTheirTurn)
+        else if (isPlayerThreeTurn && !allPlayersHaveTargets && !playerThreeHasTarget)
         {
-            playerIsEndingTheirTurn = false;
-            isPlayerThreeTurn = false;
             playerThree.isPlayerTurn = false;
+            playerThreeHasTarget = true;
             PlayerFourTurn();
         }
-        else if (isPlayerFourTurn && playerIsEndingTheirTurn)
+        else if (isPlayerFourTurn && !allPlayersHaveTargets && !playerFourHasTarget)
         {
-            playerIsEndingTheirTurn = false;
-            isPlayerFourTurn = false;
             playerFour.isPlayerTurn = false;
+            playerFourHasTarget = true;
+            allPlayersHaveTargets = true;
             PlayerOneTurn();
         }
     }
