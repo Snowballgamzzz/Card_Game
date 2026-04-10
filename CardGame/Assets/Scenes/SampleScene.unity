@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -799.83, y: 515}
-  m_SizeDelta: {x: 320.3347, y: 50}
+  m_AnchoredPosition: {x: -463.473, y: 515}
+  m_SizeDelta: {x: 993.0486, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &31502475
 MonoBehaviour:
@@ -1125,6 +1125,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1196643742}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Target
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1196643742}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: EndTurn
         m_Mode: 1
         m_Arguments:
@@ -1219,7 +1231,12 @@ MonoBehaviour:
   isPlayerTwoTurn: 0
   isPlayerThreeTurn: 0
   isPlayerFourTurn: 0
+  playerOneHasTarget: 0
+  playerTwoHasTarget: 0
+  playerThreeHasTarget: 0
+  playerFourHasTarget: 0
   playerIsEndingTheirTurn: 0
+  allPlayersHaveTargets: 0
   turnText: {fileID: 31502475}
   playerCamera: {fileID: 330585546}
 --- !u!4 &1196643743
