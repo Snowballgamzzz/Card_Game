@@ -103,7 +103,7 @@ public class Player : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 100))
             {
-                if (Input.GetKeyDown(KeyCode.Mouse0))
+                if (Input.GetKeyDown(KeyCode.Mouse0) && hit.transform.GetComponentInParent<Player>().isPlayerTurn == false)
                 {
                     targetedPlayer = hit.transform.parent.gameObject;
                 }
