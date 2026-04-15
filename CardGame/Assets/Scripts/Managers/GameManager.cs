@@ -245,7 +245,12 @@ public class GameManager : MonoBehaviour
             playerFour.isPlayerTurn = false;
             playerFourHasTarget = true;
             allPlayersHaveTargets = true;
-            PlayerOneTurn();
+            Flip();
         }
+    }
+
+    public void Flip()
+    {
+        
     }
 }

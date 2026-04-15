@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
     CardDeck deck;
 
     public GameObject targetedPlayer;
+    public GameObject selectedCard;
 
     void Start()
     {
@@ -67,6 +68,7 @@ public class Player : MonoBehaviour
             {
                 if (hit.transform.gameObject.GetComponent<Placement>() && hit.transform.gameObject.GetComponentInParent<Player>().isPlayerTurn)
                 {
+                    selectedCard = hit.transform.gameObject;
                     hit.transform.position = cardPlacement.transform.position;
                     hit.transform.rotation = cardPlacement.transform.rotation;
                 }
