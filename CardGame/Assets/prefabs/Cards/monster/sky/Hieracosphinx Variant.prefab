@@ -8,9 +8,110 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1249792339567287488, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.577
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249792339567287488, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.061
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701740151913750873, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_text
+      value: Hieracosphinx
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701740151913750873, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.x
+      value: 0.12302208
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701740151913750873, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.y
+      value: -0.82496655
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701740151913750873, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.z
+      value: 0.116550446
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808801556187037321, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5769998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808801556187037321, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.038999915
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815946966804733726, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_text
+      value: Choose 1 opponent; choose 1 card in your hand and one in their hand,
+        then swap those cards.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815946966804733726, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_fontSize
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815946966804733726, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.w
+      value: 1.6086848
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815946966804733726, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.y
+      value: -0.9830072
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815946966804733726, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3047235312675105171, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4228344082607974ead02cd0d392845f, type: 2}
     - target: {fileID: 4114121853974369767, guid: 866a1d7174a58744987c4f5094086586, type: 3}
       propertyPath: m_Name
       value: Hieracosphinx Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828773761665281421, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.20399979
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828773761665281421, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.035999894
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254532480056785823, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.20399979
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254532480056785823, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.14529216
+      objectReference: {fileID: 0}
+    - target: {fileID: 5318096334877591779, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.w
+      value: 2.0631156
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417883360532459015, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.w
+      value: 1.9100175
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417883360532459015, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.x
+      value: 0.12302208
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417883360532459015, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.y
+      value: -1.2393638
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417883360532459015, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.z
+      value: 1.4561131
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161529529928998930, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5769998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161529529928998930, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.14829218
       objectReference: {fileID: 0}
     - target: {fileID: 7657595810035129391, guid: 866a1d7174a58744987c4f5094086586, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51,6 +152,14 @@ PrefabInstance:
     - target: {fileID: 7657595810035129391, guid: 866a1d7174a58744987c4f5094086586, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451413970737203688, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.204
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451413970737203688, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.064
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

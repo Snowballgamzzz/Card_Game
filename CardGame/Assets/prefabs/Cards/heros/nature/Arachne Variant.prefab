@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2176007368866629779, guid: f0d2b0bd07e5ecc48aa01f086eabcb7d, type: 3}
+      propertyPath: m_text
+      value: Arachne
+      objectReference: {fileID: 0}
     - target: {fileID: 6832494070233404987, guid: f0d2b0bd07e5ecc48aa01f086eabcb7d, type: 3}
       propertyPath: m_Name
       value: Arachne Variant

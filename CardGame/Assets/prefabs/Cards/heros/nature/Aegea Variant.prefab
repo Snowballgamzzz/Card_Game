@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 463108064682053638, guid: f0d2b0bd07e5ecc48aa01f086eabcb7d, type: 3}
+      propertyPath: m_text
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 624452676827305809, guid: f0d2b0bd07e5ecc48aa01f086eabcb7d, type: 3}
+      propertyPath: m_text
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 976322337420877811, guid: f0d2b0bd07e5ecc48aa01f086eabcb7d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.005
@@ -48,9 +56,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2176007368866629779, guid: f0d2b0bd07e5ecc48aa01f086eabcb7d, type: 3}
+      propertyPath: m_text
+      value: Aegea
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758620653339840800, guid: f0d2b0bd07e5ecc48aa01f086eabcb7d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758620653339840800, guid: f0d2b0bd07e5ecc48aa01f086eabcb7d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758620653339840800, guid: f0d2b0bd07e5ecc48aa01f086eabcb7d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758620653339840800, guid: f0d2b0bd07e5ecc48aa01f086eabcb7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 6832494070233404987, guid: f0d2b0bd07e5ecc48aa01f086eabcb7d, type: 3}
       propertyPath: m_Name
       value: Aegea Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010926465518926149, guid: f0d2b0bd07e5ecc48aa01f086eabcb7d, type: 3}
+      propertyPath: m_text
+      value: Draw 1 card, then choose and discard 1 card.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
