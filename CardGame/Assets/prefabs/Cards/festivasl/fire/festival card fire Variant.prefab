@@ -8,6 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 16029702386916619, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16029702386916619, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16029702386916619, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 16029702386916619, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 225855533073668624, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
       propertyPath: m_Name
       value: festival card fire Variant
@@ -27,6 +43,30 @@ PrefabInstance:
     - target: {fileID: 723369713891328942, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
       propertyPath: secondaryFollowerCount
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185535430049621604, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 44cf815d7dd263444ad64b19801d03b8, type: 2}
+    - target: {fileID: 1996162867064418226, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
+      propertyPath: m_text
+      value: Choose one opponent; they lose 5F.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288919932133916375, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
+      propertyPath: m_text
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311496376861921237, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
+      propertyPath: m_text
+      value: '5
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777191550633017155, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
+      propertyPath: m_text
+      value: '20
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 5800377656672261080, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,6 +107,10 @@ PrefabInstance:
     - target: {fileID: 5800377656672261080, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877597451624063724, guid: bdb1376c06d8bce49960820357911d9c, type: 3}
+      propertyPath: m_text
+      value: Tribute to War
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

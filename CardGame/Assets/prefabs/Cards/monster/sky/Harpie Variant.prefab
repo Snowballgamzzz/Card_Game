@@ -8,9 +8,114 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1249792339567287488, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.567
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249792339567287488, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.061
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701740151913750873, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_text
+      value: Harpie
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701740151913750873, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.x
+      value: 0.12626076
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701740151913750873, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.y
+      value: -0.8282039
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701740151913750873, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.z
+      value: 0.11331177
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808801556187037321, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5670005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808801556187037321, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.038999915
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815946966804733726, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_text
+      value: Choose 1 opponent; choose 1 card in your hand and one in their hand,
+        then swap those cards.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815946966804733726, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_fontSize
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815946966804733726, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.w
+      value: 1.6119223
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815946966804733726, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.y
+      value: -0.9797698
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815946966804733726, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3047235312675105171, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4228344082607974ead02cd0d392845f, type: 2}
     - target: {fileID: 4114121853974369767, guid: 866a1d7174a58744987c4f5094086586, type: 3}
       propertyPath: m_Name
       value: Harpie Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828773761665281421, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.20700005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828773761665281421, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.032999873
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254532480056785823, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.20700005
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254532480056785823, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.14229214
+      objectReference: {fileID: 0}
+    - target: {fileID: 5318096334877591779, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.w
+      value: 2.0663528
+      objectReference: {fileID: 0}
+    - target: {fileID: 5318096334877591779, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.y
+      value: -1.6645565
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417883360532459015, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.w
+      value: 1.9067799
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417883360532459015, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.x
+      value: 0.12626076
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417883360532459015, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.y
+      value: -1.2328888
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417883360532459015, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_margin.z
+      value: 1.4528744
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161529529928998930, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5670005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161529529928998930, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.14829218
       objectReference: {fileID: 0}
     - target: {fileID: 7657595810035129391, guid: 866a1d7174a58744987c4f5094086586, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52,13 +157,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8451413970737203688, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.207
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451413970737203688, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.067
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4114121853974369767, guid: 866a1d7174a58744987c4f5094086586, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7106218600726975764}
     - targetCorrespondingSourceObject: {fileID: 4114121853974369767, guid: 866a1d7174a58744987c4f5094086586, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2383571592741138772}
@@ -68,21 +178,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4114121853974369767, guid: 866a1d7174a58744987c4f5094086586, type: 3}
   m_PrefabInstance: {fileID: 3630822910056662814}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7106218600726975764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827266176896160505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4309e9dcf25896f46a1e3f7b0b90356c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
-  primaryFollowerCount: 20
-  secondaryFollowerCount: 10
-  nullFollowerCount: 5
 --- !u!114 &2383571592741138772
 MonoBehaviour:
   m_ObjectHideFlags: 0

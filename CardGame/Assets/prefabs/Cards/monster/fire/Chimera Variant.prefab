@@ -8,6 +8,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1701740151913750873, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_text
+      value: Chimera
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815946966804733726, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: m_text
+      value: Choose one opponent; they lose 5F.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3047235312675105171, guid: 866a1d7174a58744987c4f5094086586, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 44cf815d7dd263444ad64b19801d03b8, type: 2}
     - target: {fileID: 4114121853974369767, guid: 866a1d7174a58744987c4f5094086586, type: 3}
       propertyPath: m_Name
       value: Chimera Variant
@@ -58,9 +70,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4114121853974369767, guid: 866a1d7174a58744987c4f5094086586, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 651079242014036343}
-    - targetCorrespondingSourceObject: {fileID: 4114121853974369767, guid: 866a1d7174a58744987c4f5094086586, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2754890427983385594}
   m_SourcePrefab: {fileID: 100100000, guid: 866a1d7174a58744987c4f5094086586, type: 3}
 --- !u!1 &8289621033599759508 stripped
@@ -68,21 +77,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4114121853974369767, guid: 866a1d7174a58744987c4f5094086586, type: 3}
   m_PrefabInstance: {fileID: 5337586273844568435}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &651079242014036343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8289621033599759508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4309e9dcf25896f46a1e3f7b0b90356c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
-  primaryFollowerCount: 20
-  secondaryFollowerCount: 10
-  nullFollowerCount: 5
 --- !u!114 &2754890427983385594
 MonoBehaviour:
   m_ObjectHideFlags: 0
