@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dionysus
       objectReference: {fileID: 0}
+    - target: {fileID: 5132884423163724695, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6090234236890126977, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       propertyPath: m_text
       value: If you kill any opponents F, you can gain that many F.
@@ -230,13 +234,13 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 3467781830992765294, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 5953980439883567491, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
@@ -457,6 +461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poseidon
       objectReference: {fileID: 0}
+    - target: {fileID: 5132884423163724695, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6090234236890126977, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       propertyPath: m_text
       value: 'Each Ocean card played gains you 5F
@@ -467,13 +475,13 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 3467781830992765294, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 5953980439883567491, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
@@ -552,6 +560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hephaestus
       objectReference: {fileID: 0}
+    - target: {fileID: 5132884423163724695, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6090234236890126977, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       propertyPath: m_text
       value: Each Fire card gains you 5F
@@ -560,13 +572,13 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 3467781830992765294, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 5953980439883567491, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
@@ -1198,6 +1210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zeus
       objectReference: {fileID: 0}
+    - target: {fileID: 5132884423163724695, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6090234236890126977, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       propertyPath: m_text
       value: Each Sky card played gains you 5F
@@ -1206,13 +1222,13 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 3467781830992765294, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 5953980439883567491, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
@@ -1508,6 +1524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hermes
       objectReference: {fileID: 0}
+    - target: {fileID: 5132884423163724695, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6090234236890126977, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       propertyPath: m_text
       value: 'If a player played a Wildcard, you gain 15F
@@ -1518,13 +1538,13 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 3467781830992765294, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 5953980439883567491, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
@@ -1601,13 +1621,13 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 3467781830992765294, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 5953980439883567491, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
@@ -1676,6 +1696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Demeter
       objectReference: {fileID: 0}
+    - target: {fileID: 5132884423163724695, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6090234236890126977, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       propertyPath: m_text
       value: Each Nature card played gains you 5F
@@ -1684,13 +1708,13 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 3467781830992765294, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 5953980439883567491, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
@@ -1881,17 +1905,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Artimis
       objectReference: {fileID: 0}
+    - target: {fileID: 7156521917830699178, guid: 2cc374c7437da9443abf6bf86ba5d8d0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6367421721226515884, guid: 2cc374c7437da9443abf6bf86ba5d8d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 1462175400912714323, guid: 2cc374c7437da9443abf6bf86ba5d8d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 8559777592523459262, guid: 2cc374c7437da9443abf6bf86ba5d8d0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6367421721226515884, guid: 2cc374c7437da9443abf6bf86ba5d8d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 2cc374c7437da9443abf6bf86ba5d8d0, type: 3}
@@ -2507,17 +2535,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ares
       objectReference: {fileID: 0}
+    - target: {fileID: 9088825287931041480, guid: 547574c8dc132c3439cceb2a2231436f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4984724906584251342, guid: 547574c8dc132c3439cceb2a2231436f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 664945539981800497, guid: 547574c8dc132c3439cceb2a2231436f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 7762689444307174620, guid: 547574c8dc132c3439cceb2a2231436f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 4984724906584251342, guid: 547574c8dc132c3439cceb2a2231436f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 547574c8dc132c3439cceb2a2231436f, type: 3}
@@ -4033,13 +4065,13 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 3467781830992765294, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 5953980439883567491, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8950650984045465233, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6491cb3713341e843a33b0b1d6b2c775, type: 3}
@@ -4380,13 +4412,13 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8671512133072449501, guid: 5f33e803a3e0bce458a2a263ac1be49c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 3765139860237746210, guid: 5f33e803a3e0bce458a2a263ac1be49c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 6251196775204417743, guid: 5f33e803a3e0bce458a2a263ac1be49c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8671512133072449501, guid: 5f33e803a3e0bce458a2a263ac1be49c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 5f33e803a3e0bce458a2a263ac1be49c, type: 3}
@@ -4701,13 +4733,13 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4466668635549691630, guid: 52895c08525f9b04bb9e2b3bb708fba0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 8208896514239889681, guid: 52895c08525f9b04bb9e2b3bb708fba0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 1399242323337212412, guid: 52895c08525f9b04bb9e2b3bb708fba0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 4466668635549691630, guid: 52895c08525f9b04bb9e2b3bb708fba0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 52895c08525f9b04bb9e2b3bb708fba0, type: 3}
@@ -7264,13 +7296,13 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2779379903171226841, guid: 05ded20bb5132fa45bb63fc6092ae98a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 7675620157355852582, guid: 05ded20bb5132fa45bb63fc6092ae98a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 578016855227429835, guid: 05ded20bb5132fa45bb63fc6092ae98a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 2779379903171226841, guid: 05ded20bb5132fa45bb63fc6092ae98a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 05ded20bb5132fa45bb63fc6092ae98a, type: 3}
